@@ -1,6 +1,57 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.app-container {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+}
+
+.quote {
+    text-align: center;
+}
+
+svg {
+    height: auto;
+    width: 95vw;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgba(116, 116, 116, 0.7);
+    color: rgb(37, 37, 37);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: 768px) {
+    svg {
+        height: auto;
+        width: 90vw;
+    }
 }

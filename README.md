@@ -37,7 +37,7 @@ This project aims to provide users with random motivational and fortune messages
 ## Project Structure
 
 - `src/App.jsx` - Main component that handles the fortune message display and random selection.
-- `src/fortunes.json` - Contains an array of fortune messages.
+- `src/phrases.json` - Contains an array of fortune messages.
 - `src/App.css` - Styles for the application.
 
 ## Usage
@@ -65,3 +65,24 @@ Feel free to contribute by submitting issues or pull requests. For major changes
 ## License
 
 This project is open-source and available under the MIT License.
+
+## Deployment
+
+The webpage is deployed via Netlify. You can access the live site here.
+Contributing
+
+Feel free to fork this repository, create a branch, and submit a pull request for any improvements or suggestions!
+License
+
+This project is open source and available under the MIT License.
+
+## Contact
+
+For any questions, you can reach me at:
+
+    Email: alan.quintanapacheco@gmail.com
+    Instagram: @anotherguyontheroad
+    Twitter: @AlanDKO
+    LinkedIn: Alan Quintana
+
+   
