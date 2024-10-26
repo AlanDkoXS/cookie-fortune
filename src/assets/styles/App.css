@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@400;700&family=Niramit:wght@700&display=swap");
+@font-face {
+  font-family: "CHINESETAKEAWAY";
+  src: url("../fonts/CHINESETAKEAWAY.ttf") format("truetype"); /* Asegúrate de ajustar la ruta según sea necesario */
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.wrapper {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  display: grid; 
+  grid-template-rows: auto 1fr auto; 
+  grid-gap: 10px; 
+  justify-items: center; 
+  align-items: center; 
+  margin: 20px; 
+}
+
+.header {
+  animation: bounce 2s linear infinite;
+  -webkit-animation: bounce 2s linear infinite;
+  -moz-animation: bounce 2s linear infinite;
+  filter: drop-shadow(-5px 5px 2px rgba(0, 0, 0, 0.3));
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(5px);
+  }
+  40% {
+    transform: translateY(2px);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+  80% {
+    transform: translateY(-5px);
+  }
+}
+
+svg {
+  height: auto;
+  width: 95vw;
+
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 10px;
+  background: radial-gradient(
+    circle at top left,
+  
+      rgba(255, 255, 255, 0.5),
+    rgba(155, 155, 155, 0.5)
+  );
+  color: rgb(37, 37, 37);
+  width: 200px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  backdrop-filter: blur(10px);
+}
+
+button:hover {
+  background: radial-gradient(
+    circle at top left,
+    /* Mantiene la misma dirección en hover */ rgb(255, 255, 255, 0.8),
+    rgba(151, 151, 151, 0.7)
+  );
+  transform: scale(1.1); /* Aumentar el tamaño del botón al hacer hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+  svg {
+    height: auto;
+    width: 60vw;
+  }
+
+  button {
+    height: auto;
+    width: 50vw;
+    font-weight: bold;
+    font-size: 25px;
+  }
+}
