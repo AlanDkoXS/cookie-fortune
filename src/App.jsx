@@ -1,13 +1,10 @@
 import { useState } from "react";
 import "./App.css";
 import { bg1, bg2, bg3, bg4 } from "./assets/images/";
-import phrases from "./phrases.json";
+import phrases from "./data/phrases.json";
+import { randomIndex } from "./helpers/random-index"; 
 
 const images = [bg1, bg2, bg3, bg4];
-
-function randomIndex(max) {
-  return Math.floor(Math.random() * max);
-}
 
 function App() {
   const [phrase, setPhrase] = useState(phrases[randomIndex(phrases.length)]);
@@ -23,12 +20,13 @@ function App() {
   return (
     <div className="app-container" style={{ backgroundImage: `url('${img}')` }}>
       <div>
-        <svg
+        <svg className="rectangle"
           width="640"
           height="259"
           viewBox="0 0 640 259"
           fill="none"
-          xmlns="http://www.w3.org/2000/svg">
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g filter="url(#filter0_d_145_1359)">
             <path
               d="M0 19.9344C0 19.9344 138.762 64.7867 281.262 19.9344C423.762 -24.918 627 19.9344 627 19.9344V225.508C627 225.508 454.598 180.189 313.5 225.508C172.402 270.828 0 225.508 0 225.508V19.9344Z"
@@ -43,7 +41,8 @@ function App() {
               width="640"
               height="258.65"
               filterUnits="userSpaceOnUse"
-              colorInterpolationFilters="sRGB">
+              colorInterpolationFilters="sRGB"
+            >
               <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
                 in="SourceAlpha"
@@ -77,18 +76,20 @@ function App() {
             y="45%"
             dominantBaseline="middle"
             textAnchor="middle"
-            fontSize="24"
+            fontSize="32"
             fontFamily="'Playfair Display', serif"
-            fill="black">
+            fill="black"
+          >
             Sobre {phrase.topic}
           </text>
-          <text
+          <text className="quote"
             x="50%"
             y="60%"
             dominantBaseline="middle"
             textAnchor="middle"
-            fontSize="16"
-            fill="black">
+            fontSize="24"
+            fill="black"
+          >
             {phrase.phrase}
           </text>
         </svg>
