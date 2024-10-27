@@ -18,16 +18,18 @@ body {
 }
 
 .wrapper {
-  display: grid; 
-  grid-template-rows: 1fr 1fr 1fr; 
-  grid-template-columns: 1fr; 
-  gap: 10px; 
-  justify-items: center; 
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+  background-position: center; 
+  justify-items: center;
   align-items: center;
   width: auto;
   height: 100vh; /* Ocupa el ancho completo del contenedor */
   padding: 20px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .header {
@@ -59,16 +61,13 @@ body {
 svg {
   height: auto;
   width: 90vw;
-
 }
 
 button {
-  margin-top: 10px;
   padding: 10px 10px;
   background: radial-gradient(
     circle at top left,
-  
-      rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5),
     rgba(155, 155, 155, 0.5)
   );
   color: rgb(37, 37, 37);
@@ -89,10 +88,10 @@ button {
 button:hover {
   background: radial-gradient(
     circle at top left,
-    /* Mantiene la misma dirección en hover */ rgb(255, 255, 255, 0.8),
+    rgb(255, 255, 255, 0.8),
     rgba(151, 151, 151, 0.7)
   );
-  transform: scale(1.1); /* Aumentar el tamaño del botón al hacer hover */
+  transform: scale(1.1);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 

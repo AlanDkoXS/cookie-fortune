@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./assets/styles/App.css";
 import { bg1, bg2, bg3, bg4 } from "./assets/images/";
 import phrases from "./data/phrases.json";
-import { randomIndex } from "./helpers/random-index";
+import { randomIndex } from "./components/random-index";
 
 const images = [bg1, bg2, bg3, bg4];
 
@@ -30,7 +30,7 @@ function App() {
       <div className="header">
         <svg
           width="400"
-          height="120"
+          height="150"
           viewBox="0 0 400 120"
           xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -56,7 +56,7 @@ function App() {
           </defs>
           <text
             x="50%"
-            y="40%"
+            y="35%"
             dominant-baseline="middle"
             text-anchor="middle"
             font-size="40"
@@ -79,7 +79,7 @@ function App() {
 
           <text
             x="50%"
-            y="80%"
+            y="85%"
             dominant-baseline="middle"
             text-anchor="middle"
             font-size="40"
@@ -141,7 +141,7 @@ function App() {
 
         <text
           x="50%"
-          y="30%"
+          y="40%"
           dominantBaseline="middle"
           textAnchor="middle"
           fontSize="28"
@@ -151,19 +151,20 @@ function App() {
           Sobre {phrase.topic}
         </text>
         <text
-          className="quote fade-in-text"
+          className="quote"
           x="50%"
           y="50%"
           dominantBaseline="middle"
           textAnchor="middle"
           fontSize="24"
-          fontFamily="'Source Sans Pro', sans"
+          fontFamily="'source code', serif" // Asegúrate de que la fuente tenga una variante cursiva
+          style={{ fontStyle: "italic" }}
           fill={color.dark}>
-          {phrase.phrase}
+         " {phrase.phrase} "
         </text>
       </svg>
       <button className="btn" onClick={changePhrase}>
-        Galleta
+        Probar
       </button>
     </div>
   );
