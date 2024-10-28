@@ -1,3 +1,4 @@
+
 # Cookies Fortune
 
 **Cookies Fortune** is a simple React application built with Vite that generates random fortune cookie messages for users.
@@ -37,8 +38,8 @@ This project aims to provide users with random motivational and fortune messages
 ## Project Structure
 
 - `src/App.jsx` - Main component that handles the fortune message display and random selection.
-- `src/phrases.json` - Contains an array of fortune messages.
-- `src/App.css` - Styles for the application.
+- `src/data/phrases.json` - Contains an array of fortune messages.
+- `src/assets/styles/App.css` - Styles for the application.
 
 ## Usage
 
@@ -68,13 +69,12 @@ This project is open-source and available under the MIT License.
 
 ## Deployment
 
-The webpage is deployed via Netlify. You can access the live site here.
-Contributing
+The webpage is deployed via Netlify. You can access the live site [here](https://cookiefortune-alanquintana.netlify.app/).
 
-Feel free to fork this repository, create a branch, and submit a pull request for any improvements or suggestions!
-License
+## Credits
 
-This project is open source and available under the MIT License.
+- Icons and images sourced from [SVGRepo](https://www.svgrepo.com).
+- The typography is only for personal use; commercial use is prohibited. More info on the font can be found [here](https://www.dafont.com/es/chinese-takeaway.font).
 
 ## Contact
 
@@ -83,6 +83,4 @@ For any questions, you can reach me at:
     Email: alan.quintanapacheco@gmail.com
     Instagram: @anotherguyontheroad
     Twitter: @AlanDKO
-    LinkedIn: Alan Quintana
-
-   
+    LinkedIn: [Alan Quintana](https://www.linkedin.com/in/alanxs/)

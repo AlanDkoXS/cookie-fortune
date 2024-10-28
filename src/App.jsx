@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./assets/styles/App.css";
 import { bg1, bg2, bg3, bg4 } from "./assets/images/";
 import phrases from "./data/phrases.json";
-import { randomIndex } from "./components/random-index";
+import { randomIndex } from "./helpers/random-index";
 
 const images = [bg1, bg2, bg3, bg4];
 
