@@ -1,7 +1,7 @@
 
-# Cookies Fortune
+# Fortune Cookie
 
-**Cookies Fortune** is a simple React application built with Vite that generates random fortune cookie messages for users.
+**Fortune Cookie** is a simple React application built with Vite that generates random fortune cookie messages for users.
 
 ## Project Overview
 

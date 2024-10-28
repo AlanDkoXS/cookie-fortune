@@ -146,7 +146,7 @@ function App() {
           textAnchor="middle"
           fontSize="28"
           font-weight="bold"
-          fontFamily="'Playfair Display', serif"
+          fontFamily="'Niramit', serif"
           fill={color.dark}>
           Sobre {phrase.topic}
         </text>
@@ -157,7 +157,7 @@ function App() {
           dominantBaseline="middle"
           textAnchor="middle"
           fontSize="24"
-          fontFamily="'source code', serif" // Asegúrate de que la fuente tenga una variante cursiva
+          fontFamily="'Niramit', serif" // Asegúrate de que la fuente tenga una variante cursiva
           style={{ fontStyle: "italic" }}
           fill={color.dark}>
          " {phrase.phrase} "
