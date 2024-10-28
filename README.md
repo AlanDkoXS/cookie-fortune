@@ -17,8 +17,8 @@ This project aims to provide users with random motivational and fortune messages
 
 1. **Clone this repository**:
    ```bash
-   git clone https://github.com/AlanDkoXS/cookies-fortune.git
-   cd cookies-fortune
+   git clone https://github.com/AlanDkoXS/fortune-cookie.git
+   cd fortune-cookie
    ```
 
 2. **Install dependencies**:
@@ -69,7 +69,7 @@ This project is open-source and available under the MIT License.
 
 ## Deployment
 
-The webpage is deployed via Netlify. You can access the live site [here](https://cookiefortune-alanquintana.netlify.app/).
+The webpage is deployed via Netlify. You can access the live site [here](https://fortunecookie-alanquintana.netlify.app/).
 
 ## Credits
 
