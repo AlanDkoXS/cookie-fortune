@@ -61,7 +61,7 @@ function App() {
               dominant-baseline="middle"
               text-anchor="middle"
               font-size="50"
-              font-family="'MUSASHI', sans-serif"
+              font-family="'CHINESETAKEAWAY', sans-serif"
               fill={color.dark}
               filter="url(#outer-stroke)">
               Galleta
@@ -72,7 +72,7 @@ function App() {
               dominant-baseline="middle"
               text-anchor="middle"
               font-size="30"
-              font-family="'MUSASHI', sans-serif"
+              font-family="'CHINESETAKEAWAY', sans-serif"
               fill={color.dark}
               filter="url(#outer-stroke)">
               de la
@@ -84,7 +84,7 @@ function App() {
               dominant-baseline="middle"
               text-anchor="middle"
               font-size="60"
-              font-family="'MUSASHI', sans-serif"
+              font-family="'CHINESETAKEAWAY', sans-serif"
               fill={color.dark}
               filter="url(#outer-stroke)">
               Fortuna
@@ -93,13 +93,13 @@ function App() {
         </div>
         <div className="card--heading">
           <svg
-            width="200%"
-            height="200%"
-            viewBox="0 0 400 200"
+            width="800"
+            height="200"
+            viewBox="0 0 400 300"
             xmlns="http://www.w3.org/2000/svg">
             <defs>
               <filter
-                id="outer-stroke"
+                id="outer-stroke1"
                 x="-50%"
                 y="-50%"
                 width="200%"
@@ -123,59 +123,28 @@ function App() {
               y="50%"
               dominant-baseline="middle"
               text-anchor="middle"
-              font-size="50"
-              font-family="'MUSASHI', sans-serif"
+              font-size="100"
+              font-family="'CHINESETAKEAWAY', sans-serif"
               fill={color.dark}
-              filter="url(#outer-stroke)">
-              Galleta de la Suerte
+              filter="url(#outer-stroke1)">
+              Galleta de la Fortuna
             </text>
           </svg>
         </div>
-        <div className="card--quote">
-          <h2 style={{ color: color.dark }}> Sobre {phrase.topic}</h2>
-          <q style={{ color: color.dark }}>{phrase.phrase}</q>
-          <div className="card--body">
-            <svg viewBox="0 0 640 259" xmlns="http://www.w3.org/2000/svg">
-              <g filter="url(#filter0_d_145_1359)">
+        <div className="card__rectangle">
+          <div className="card__rectangle--quote">
+            <h2 style={{ color: color.dark }}> Sobre {phrase.topic}</h2>
+            <q style={{ color: color.dark }}>{phrase.phrase}</q>
+            <div className="card__rectangle--body">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200">
                 <path
-                  d="M0 19.9344C0 19.9344 138.762 64.7867 281.262 19.9344C423.762 -24.918 627 19.9344 627 19.9344V225.508C627 225.508 454.598 180.189 313.5 225.508C172.402 270.828 0 225.508 0 225.508V19.9344Z"
+                  d="M -0.001 16.284 C -0.001 16.284 132.823 52.761 269.186 16.284 C 405.55 -20.356 600 16.284 600 16.284 L 600 183.607 C 600 183.607 435.023 146.723 300 183.607 C 164.976 220.491 -0.001 183.607 -0.001 183.607 L -0.001 16.284 Z"
                   fill={color.light}
-                />
-              </g>
-              <defs>
-                <filter
-                  id="filter0_d_145_1359"
-                  x="0"
-                  y="0"
-                  filterUnits="userSpaceOnUse"
-                  colorInterpolationFilters="sRGB">
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feOffset dx="12" dy="12" />
-                  <feGaussianBlur stdDeviation="0.5" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.13 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow_145_1359"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect1_dropShadow_145_1359"
-                    result="shape"
-                  />
-                </filter>
-              </defs>
-            </svg>
+                  transform-origin="299.999px 99.999px">
+                  <title>bgRectangle</title>
+                </path>
+              </svg>
+            </div>
           </div>
         </div>
         <div className="card--btn">
