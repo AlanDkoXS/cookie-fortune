@@ -74,7 +74,7 @@ The webpage is deployed via Netlify. You can access the live site [here](https:/
 ## Credits
 
 - Icons and images sourced from [SVGRepo](https://www.svgrepo.com).
-- The typography is only for personal use; commercial use is prohibited. More info on the font can be found [here](https://www.dafont.com/es/chinese-takeaway.font).
+- The typography is only for personal use; commercial use is prohibited. More info on the font can be found [here](https://www.dafont.com/es/musashi-2.font).
 
 ## Contact
 
