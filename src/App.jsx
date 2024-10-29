@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="wrapper" style={{ backgroundImage: `url('${img}')` }}>
       <div className="card">
-        <div className="card--heading">
+        <div className="card--heading-mobile">
           <svg
             width="400"
             height="200"
@@ -61,7 +61,7 @@ function App() {
               dominant-baseline="middle"
               text-anchor="middle"
               font-size="50"
-              font-family="'CHINESETAKEAWAY', sans-serif"
+              font-family="'MUSASHI', sans-serif"
               fill={color.dark}
               filter="url(#outer-stroke)">
               Galleta
@@ -72,7 +72,7 @@ function App() {
               dominant-baseline="middle"
               text-anchor="middle"
               font-size="30"
-              font-family="'CHINESETAKEAWAY', sans-serif"
+              font-family="'MUSASHI', sans-serif"
               fill={color.dark}
               filter="url(#outer-stroke)">
               de la
@@ -84,10 +84,50 @@ function App() {
               dominant-baseline="middle"
               text-anchor="middle"
               font-size="60"
-              font-family="'CHINESETAKEAWAY', sans-serif"
+              font-family="'MUSASHI', sans-serif"
               fill={color.dark}
               filter="url(#outer-stroke)">
               Fortuna
+            </text>
+          </svg>
+        </div>
+        <div className="card--heading">
+          <svg
+            width="200%"
+            height="200%"
+            viewBox="0 0 400 200"
+            xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <filter
+                id="outer-stroke"
+                x="-50%"
+                y="-50%"
+                width="200%"
+                height="200%">
+                <feMorphology
+                  in="SourceAlpha"
+                  operator="dilate"
+                  radius="3"
+                  result="expanded"
+                />
+                <feFlood flood-color={color.light} />
+                <feComposite in2="expanded" operator="in" />
+                <feMerge>
+                  <feMergeNode />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+            <text
+              x="50%"
+              y="50%"
+              dominant-baseline="middle"
+              text-anchor="middle"
+              font-size="50"
+              font-family="'MUSASHI', sans-serif"
+              fill={color.dark}
+              filter="url(#outer-stroke)">
+              Galleta de la Suerte
             </text>
           </svg>
         </div>
@@ -96,7 +136,7 @@ function App() {
           <q style={{ color: color.dark }}>{phrase.phrase}</q>
           <div className="card--body">
             <svg viewBox="0 0 640 259" xmlns="http://www.w3.org/2000/svg">
-              <g filter="url(#filter0_d_145_1359)" opacity={0.8}>
+              <g filter="url(#filter0_d_145_1359)">
                 <path
                   d="M0 19.9344C0 19.9344 138.762 64.7867 281.262 19.9344C423.762 -24.918 627 19.9344 627 19.9344V225.508C627 225.508 454.598 180.189 313.5 225.508C172.402 270.828 0 225.508 0 225.508V19.9344Z"
                   fill={color.light}

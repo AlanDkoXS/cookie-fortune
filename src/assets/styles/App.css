@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@400;700&family=Niramit:wght@400;700&display=swap");
 
 @font-face {
-  font-family: "CHINESETAKEAWAY";
-  src: url("../fonts/CHINESETAKEAWAY.ttf") format("truetype");
+  font-family: "MUSASHI";
+  src: url("../fonts/MUSASHI.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,9 +16,15 @@ body {
   overflow: hidden;
 }
 
-path {
-  width: 50vw;
-  height: auto;
+h1, h2, h3 {
+  font-family: Niramit, sans-serif;
+  font-weight: bold;
+}
+
+q {
+  font-family: Niramit, serif;
+  font-weight: lighter;
+  font-style: italic;
 }
 
 .wrapper {
@@ -34,8 +40,8 @@ path {
 
 .card {
   display: flex;
-  gap: 3em;
-  padding: 2em 0;
+  gap: 1.5em;
+  padding: 1em 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -49,26 +55,39 @@ path {
   filter: drop-shadow(-5px 5px 2px rgba(0, 0, 0, 0.3));
   width: auto;
   height: 100%;
+  display: none;
+}
+
+.card--heading-mobile {
+  animation: bounce 2s linear infinite;
+  filter: drop-shadow(-5px 5px 2px rgba(0, 0, 0, 0.3));
+  width: auto;
+  height: 100%;
 }
 
 .card--body {
   position: absolute;
-  width: 90vw;
+  width: 90%;
   height: auto;
   display: inline;
   z-index: -1;
   opacity: 0.8;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .card--quote {
+  aspect-ratio: 16 / 9;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 5px;
   width: 90vw;
   height: auto;
   text-align: center;
+  justify-content: center;
   overflow: hidden;
   z-index: 1;
 }
@@ -79,7 +98,7 @@ path {
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-user-select: none;
-  user-select: none; 
+  user-select: none;
   transition: transform 0.3s ease;
 }
 
@@ -110,3 +129,12 @@ path {
   }
 }
 
+@media (min-width: 768px) {
+  .card--heading {
+    display: inline-block;
+  }
+
+  .card--heading-mobile {
+    display: none;
+  }
+}
