@@ -30,7 +30,7 @@ body {
 
 .card {
   display: flex;
-  gap: 3em;
+  gap: 2em;
   padding: 2em 0;
   flex-direction: column;
   justify-content: center;
@@ -40,7 +40,7 @@ body {
   margin: 0 auto;
 }
 
-.card__rectangle--quote {
+.card--quote {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -55,7 +55,7 @@ body {
   z-index: 1;
 }
 
-.card__body {
+.card--body {
   position: absolute;
   width: 100%;
   height: auto;

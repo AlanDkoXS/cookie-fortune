@@ -91,10 +91,10 @@ function App() {
             </text>
           </svg>
         </div>
-        <div className="card__rectangle--quote">
+        <div className="card--quote">
           <h2 style={{ color: color.dark }}> Sobre {phrase.topic}</h2>
           <q style={{ color: color.dark }}>{phrase.phrase}</q>
-          <div className="card__body">
+          <div className="card--body">
             <svg viewBox="0 0 640 259 " xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d_145_1359)" opacity={0.8}>
                 <path
