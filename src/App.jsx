@@ -100,6 +100,7 @@ function App() {
   viewBox="0 0 640 259 "
     width="640"
   height="259"
+  overflow="hidden"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
 >
