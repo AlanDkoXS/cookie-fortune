@@ -95,7 +95,7 @@ function App() {
           <h2 style={{ color: color.dark }}> Sobre {phrase.topic}</h2>
           <q style={{ color: color.dark }}>{phrase.phrase}</q>
           <div className="card--body">
-            <svg viewBox="0 0 640 259 " xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 640 259" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d_145_1359)" opacity={0.8}>
                 <path
                   d="M0 19.9344C0 19.9344 138.762 64.7867 281.262 19.9344C423.762 -24.918 627 19.9344 627 19.9344V225.508C627 225.508 454.598 180.189 313.5 225.508C172.402 270.828 0 225.508 0 225.508V19.9344Z"
@@ -138,10 +138,8 @@ function App() {
             </svg>
           </div>
         </div>
-
-        <div>
+        <div className="card--btn">
           <svg
-            className="card--btn"
             onClick={changePhrase}
             id="btn"
             xmlns="http://www.w3.org/2000/svg"
