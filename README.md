@@ -65,7 +65,7 @@ Feel free to contribute by submitting issues or pull requests. For major changes
 
 ## License
 
-This project is open-source and available under the MIT License.
+This project is open-source and available under the MIT License. The use of any external resources included in this project is intended for personal use only and is strictly prohibited for commercial purposes.
 
 ## Deployment
 
@@ -75,6 +75,7 @@ The webpage is deployed via Netlify. You can access the live site [here](https:/
 
 - Icons and images sourced from [SVGRepo](https://www.svgrepo.com).
 - The typography is only for personal use; commercial use is prohibited. More info on the font can be found [here](https://www.dafont.com/es/musashi-2.font).
+- Special thanks to my Professor Jesus Hernandez
 
 ## Contact
 
@@ -83,4 +84,4 @@ For any questions, you can reach me at:
     Email: alan.quintanapacheco@gmail.com
     Instagram: @anotherguyontheroad
     Twitter: @AlanDKO
-    LinkedIn: [Alan Quintana](https://www.linkedin.com/in/alanxs/)
+    LinkedIn: AlanXS
