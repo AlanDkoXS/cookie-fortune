@@ -32,7 +32,7 @@ function App() {
           <svg
             width="400"
             height="200"
-            viewBox="0 0 400 120"
+            viewBox="0 0 400 200"
             xmlns="http://www.w3.org/2000/svg">
             <defs>
               <filter
@@ -57,7 +57,7 @@ function App() {
             </defs>
             <text
               x="50%"
-              y="20%"
+              y="30%"
               dominant-baseline="middle"
               text-anchor="middle"
               font-size="50"
@@ -80,7 +80,7 @@ function App() {
 
             <text
               x="50%"
-              y="90%"
+              y="75%"
               dominant-baseline="middle"
               text-anchor="middle"
               font-size="60"

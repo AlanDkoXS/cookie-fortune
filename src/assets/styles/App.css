@@ -47,8 +47,8 @@ path {
 .card--heading {
   animation: bounce 2s linear infinite;
   filter: drop-shadow(-5px 5px 2px rgba(0, 0, 0, 0.3));
-  width: 80vw;
-  height: auto;
+  width: auto;
+  height: 100%;
 }
 
 .card--body {
