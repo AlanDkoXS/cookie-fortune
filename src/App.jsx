@@ -136,7 +136,10 @@ function App() {
             <h2 style={{ color: color.dark }}> Sobre {phrase.topic}</h2>
             <q style={{ color: color.dark }}>{phrase.phrase}</q>
             <div className="card__rectangle--body">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 600 200"
+                preserveAspectRatio="none">
                 <path
                   d="M -0.001 16.284 C -0.001 16.284 132.823 52.761 269.186 16.284 C 405.55 -20.356 600 16.284 600 16.284 L 600 183.607 C 600 183.607 435.023 146.723 300 183.607 C 164.976 220.491 -0.001 183.607 -0.001 183.607 L -0.001 16.284 Z"
                   fill={color.light}
