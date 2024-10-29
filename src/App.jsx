@@ -28,10 +28,10 @@ function App() {
   return (
     <div className="wrapper" style={{ backgroundImage: `url('${img}')` }}>
       <div className="card">
-        <div className="card--header">
+        <div className="card--heading">
           <svg
             width="400"
-            height="150"
+            height="200"
             viewBox="0 0 400 120"
             xmlns="http://www.w3.org/2000/svg">
             <defs>
@@ -57,10 +57,10 @@ function App() {
             </defs>
             <text
               x="50%"
-              y="35%"
+              y="20%"
               dominant-baseline="middle"
               text-anchor="middle"
-              font-size="40"
+              font-size="50"
               font-family="'CHINESETAKEAWAY', sans-serif"
               fill={color.dark}
               filter="url(#outer-stroke)">
@@ -68,10 +68,10 @@ function App() {
             </text>
             <text
               x="50%"
-              y="60%"
+              y="50%"
               dominant-baseline="middle"
               text-anchor="middle"
-              font-size="20"
+              font-size="30"
               font-family="'CHINESETAKEAWAY', sans-serif"
               fill={color.dark}
               filter="url(#outer-stroke)">
@@ -80,68 +80,71 @@ function App() {
 
             <text
               x="50%"
-              y="85%"
+              y="90%"
               dominant-baseline="middle"
               text-anchor="middle"
-              font-size="40"
+              font-size="60"
               font-family="'CHINESETAKEAWAY', sans-serif"
               fill={color.dark}
               filter="url(#outer-stroke)">
-              Suerte
+              Fortuna
             </text>
           </svg>
         </div>
         <div className="card__rectangle--quote">
         <h2 style={{ color: color.dark }}> Sobre {phrase.topic}</h2>
         <q style={{ color: color.dark }}>{phrase.phrase}</q>
-          <svg className="card__rectangle--background"
-            width="640"
-            height="259"
-            viewBox="0 0 640 259"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <g filter="url(#filter0_d_145_1359)" opacity={0.8}>
-              <path
-                d="M0 19.9344C0 19.9344 138.762 64.7867 281.262 19.9344C423.762 -24.918 627 19.9344 627 19.9344V225.508C627 225.508 454.598 180.189 313.5 225.508C172.402 270.828 0 225.508 0 225.508V19.9344Z"
-                fill={color.light}
-              />
-            </g>
-            <defs>
-              <filter
-                id="filter0_d_145_1359"
-                x="0"
-                y="0"
-                width="640"
-                height="259"
-                filterUnits="userSpaceOnUse"
-                colorInterpolationFilters="sRGB">
-                <feColorMatrix
-                  in="SourceAlpha"
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  result="hardAlpha"
-                />
-                <feOffset dx="12" dy="12" />
-                <feGaussianBlur stdDeviation="0.5" />
-                <feComposite in2="hardAlpha" operator="out" />
-                <feColorMatrix
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.13 0"
-                />
-                <feBlend
-                  mode="normal"
-                  in2="BackgroundImageFix"
-                  result="effect1_dropShadow_145_1359"
-                />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="effect1_dropShadow_145_1359"
-                  result="shape"
-                />
-              </filter>
-            </defs>
-          </svg>
+          <div></div>
+          <svg
+  className="card__body"
+  viewBox="0 0 640 259 "
+    width="640"
+  height="259"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g filter="url(#filter0_d_145_1359)" opacity={0.8}>
+    <path
+      d="M0 19.9344C0 19.9344 138.762 64.7867 281.262 19.9344C423.762 -24.918 627 19.9344 627 19.9344V225.508C627 225.508 454.598 180.189 313.5 225.508C172.402 270.828 0 225.508 0 225.508V19.9344Z"
+      fill={color.light}
+    />
+  </g>
+  <defs>
+    <filter
+      id="filter0_d_145_1359"
+      x="0"
+      y="0"
+      filterUnits="userSpaceOnUse"
+      colorInterpolationFilters="sRGB"
+    >
+      <feColorMatrix
+        in="SourceAlpha"
+        type="matrix"
+        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+        result="hardAlpha"
+      />
+      <feOffset dx="12" dy="12" />
+      <feGaussianBlur stdDeviation="0.5" />
+      <feComposite in2="hardAlpha" operator="out" />
+      <feColorMatrix
+        type="matrix"
+        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.13 0"
+      />
+      <feBlend
+        mode="normal"
+        in2="BackgroundImageFix"
+        result="effect1_dropShadow_145_1359"
+      />
+      <feBlend
+        mode="normal"
+        in="SourceGraphic"
+        in2="effect1_dropShadow_145_1359"
+        result="shape"
+      />
+    </filter>
+  </defs>
+</svg>
+
         </div>
 
         <div>

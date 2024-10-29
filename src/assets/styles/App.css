@@ -7,44 +7,37 @@
   font-style: normal;
 }
 
+#root {
+  height: 100vh;
+}
+
 body {
   height: 100vh;
   overflow: hidden;
 }
 
-h1, h2 {
-  font-family: Niramit, sans-serif;
-  font-weight: bold;
-  font-size: 22px;
-}
-
-q {
-  font-family: Niramit, sans-serif;
-  font-weight:lighter;
-  font-style: italic;
-  font-size: 18px;
-}
-
 .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: auto;
-  background-size: cover;
-  background-position: center;
+  min-height: 100vh;
+  display: grid; 
+  place-items: center; 
+  background-size: cover; 
+  background-position: center; 
   margin: 0 auto;
   overflow: hidden;
   z-index: -100;
 }
 
+
 .card {
   display: flex;
+  gap: 3em;
+  padding: 2em 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .card__rectangle--quote {
@@ -62,19 +55,16 @@ q {
   z-index: 1;
 }
 
-.card__rectangle--background {
+.card__body {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
+  display: block;
   z-index: -1;
   opacity: 0.8;
-  background-size: cover; 
-  background-position: center;
 }
 
-.card--header {
+.card--heading {
   animation: bounce 2s linear infinite;
   filter: drop-shadow(-5px 5px 2px rgba(0, 0, 0, 0.3));
   width: 120%;
