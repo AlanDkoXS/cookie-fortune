@@ -96,7 +96,7 @@ q {
     }
   }
   .card__btn {
-    width: 40vw;
+    width: 50vw;
     height: auto;
     cursor: pointer;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
