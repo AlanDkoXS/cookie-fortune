@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="wrapper" style={{ backgroundImage: `url('${img}')` }}>
       <div className="card">
-        <div className="card--heading-mobile">
+        <div className="card__heading-mobile">
           <svg
             width="400"
             height="200"
@@ -91,7 +91,7 @@ function App() {
             </text>
           </svg>
         </div>
-        <div className="card--heading">
+        <div className="card__heading">
           <svg
             width="800"
             height="200"
@@ -138,8 +138,7 @@ function App() {
             <div className="card__rectangle--body">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 600 200"
-                preserveAspectRatio="none">
+                viewBox="0 0 600 200">
                 <path
                   d="M -0.001 16.284 C -0.001 16.284 132.823 52.761 269.186 16.284 C 405.55 -20.356 600 16.284 600 16.284 L 600 183.607 C 600 183.607 435.023 146.723 300 183.607 C 164.976 220.491 -0.001 183.607 -0.001 183.607 L -0.001 16.284 Z"
                   fill={color.light}
@@ -150,7 +149,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="card--btn">
+        <div className="card__btn">
           <svg
             onClick={changePhrase}
             id="btn"
